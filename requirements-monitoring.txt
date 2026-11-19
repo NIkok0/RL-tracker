@@ -1,0 +1,2 @@
+# Optional logger SDK; tested in the isolated DAX runtime. No training dependencies changed.
+wandb==0.31.0

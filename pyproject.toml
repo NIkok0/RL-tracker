@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dax-o6-upper-tracker"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "torch", "mujoco", "mujoco-warp", "warp-lang", "Pillow"]
+
+[project.optional-dependencies]
+data = ["pyarrow>=16"]
+monitoring = ["wandb>=0.19,<1"]
+onnx = ["onnx>=1.16,<2", "onnxruntime>=1.18,<2"]
+
+[tool.setuptools.packages.find]
+include = ["dax_supermimic*"]
+
+[tool.setuptools.package-data]
+dax_supermimic = ["web/*.html", "web/*.js", "web/*.css", "web/vendor/*"]

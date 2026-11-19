@@ -1,0 +1,7 @@
+# Offline Actor inference. No Isaac Lab / Warp runtime is needed.
+# Jetson: use scripts/setup_dax_orin_inference.sh for the CUDA-compatible torch wheel.
+numpy>=1.26,<3
+scipy>=1.14
+mujoco>=3.3,<4
+# Required by existing imports through motion/MDP/kinematics; no physics is started.
+torch>=2.7

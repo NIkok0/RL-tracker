@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.runtime/
+.context/
+.env
+.venv/
+data/
+output/
+runs/
+verification/
+wandb/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.log
+imgui.ini
